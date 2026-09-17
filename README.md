@@ -659,7 +659,7 @@ http://<FRONTEND_PUBLIC_IP>
 # 📁 Project Structure
 
 ```text
-3-tier-application/
+ostad-assignement4/
 │
 ├── README.md
 │
@@ -671,9 +671,6 @@ http://<FRONTEND_PUBLIC_IP>
 │
 ├── nginx/
 │   └── default.conf
-│
-├── database/
-│   └── ...
 │
 └── screenshots/
     ├── architecture-diagram.png
