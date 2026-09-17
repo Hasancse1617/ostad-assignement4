@@ -220,7 +220,7 @@ server {
     listen 80;
     server_name _;
 
-    root /var/www/frontend;
+    root /home/ubuntu/ostad-assignement4/frontend/dist;
     index index.html;
 
     location / {
@@ -262,7 +262,7 @@ The backend instance:
 ### Backend Configuration
 
 ```text
-Private IP: <BACKEND_PRIVATE_IP>
+Private IP: 10.0.2.188
 Application Port: 5000
 Process Manager: PM2
 ```
@@ -325,7 +325,7 @@ The database server:
 
 ```text
 Database: MongoDB
-Private IP: <DATABASE_PRIVATE_IP>
+Private IP: 10.0.3.239
 Port: 27017
 ```
 
