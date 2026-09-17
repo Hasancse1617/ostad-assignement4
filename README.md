@@ -228,7 +228,7 @@ server {
     }
 
     location /api/ {
-        proxy_pass http://10.0.2.10:5000/;
+        proxy_pass http://10.0.2.188:5000/;
 
         proxy_http_version 1.1;
 
@@ -239,7 +239,7 @@ server {
 }
 ```
 
-> Replace `10.0.2.10` with the actual private IP address of the backend server.
+> Backend Server Private IP: `10.0.2.188`
 
 ### Nginx Configuration Screenshot
 
@@ -338,10 +338,10 @@ Example:
 ```yaml
 net:
   port: 27017
-  bindIp: 10.0.3.10
+  bindIp: 10.0.3.239
 ```
 
-> Replace the IP address with the actual private IP of the database server.
+> Database Server Private IP: `10.0.3.239`
 
 ### MongoDB Status
 
@@ -635,13 +635,7 @@ The deployed frontend application is available at:
 **Public URL:**
 
 ```text
-<YOUR_PUBLIC_URL>
-```
-
-Example:
-
-```text
-http://<FRONTEND_PUBLIC_IP>
+http://18.143.116.158
 ```
 
 ---
@@ -650,9 +644,9 @@ http://<FRONTEND_PUBLIC_IP>
 
 | Layer    | Server | Private IP              | Public IP              | Port  |
 | -------- | ------ | ----------------------- | ---------------------- | ----- |
-| Frontend | EC2    | `<FRONTEND_PRIVATE_IP>` | `<FRONTEND_PUBLIC_IP>` | 80    |
-| Backend  | EC2    | `<BACKEND_PRIVATE_IP>`  | None                   | 5000  |
-| Database | EC2    | `<DATABASE_PRIVATE_IP>` | None                   | 27017 |
+| Frontend | EC2    | `TBD`                   | `18.143.116.158`       | 80    |
+| Backend  | EC2    | `10.0.2.188`            | None                   | 5000  |
+| Database | EC2    | `10.0.3.239`            | None                   | 27017 |
 
 ---
 
