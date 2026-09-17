@@ -74,11 +74,6 @@ const handleSubmit = async (e) => {
     <div className="min-h-screen bg-gradient-to-br from-yellow-100 to-yellow-200 p-6 flex gap-10 justify-center items-center ">
       {/* Form Card */}
       <div className="bg-white p-8 rounded-3xl shadow-2xl w-full max-w-md mb-8">
-        <img
-          src="../public/Ostad.png"
-          alt="Logo"
-          className="w-24 mx-auto mb-4"
-        />
         <h1 className="text-3xl font-bold text-center text-yellow-500 mb-8">
           Register Student
         </h1>
@@ -187,13 +182,6 @@ const handleSubmit = async (e) => {
                 {students.map((student, idx) => (
                   <tr key={idx} className="hover:bg-yellow-50 rounded-2xl">
                     <td className="border-b p-2 flex  items-center gap-5">
-                      <span>
-                        <img
-                          src="../public/OstadCircle.png"
-                          alt="logo"
-                          className="h-5 w-5"
-                        />
-                      </span>
                       {student.name}
                     </td>
                     <td className="border-b p-2">{student.email}</td>
